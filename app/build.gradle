@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+  signingConfigs {
+    config {
+      keyAlias 'runtracer'
+      keyPassword 'regrub01'
+      storeFile file('/usr/src/android/RunTracer/runtracer.keystore')
+      storePassword 'regrub01'
+    }
+  }
+  compileSdkVersion 21
+  buildToolsVersion '22.0.1'
+  defaultConfig {
+    applicationId "com.runtracer"
+    minSdkVersion 21
+    targetSdkVersion 22
+    versionName '2.2'
+    versionCode 4
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      signingConfig signingConfigs.config
+    }
+  }
+  productFlavors {
+  }
+  dexOptions {
+  }
+  compileOptions {
+  }
+}
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile 'com.google.guava:guava:12.0'
+  compile 'com.android.support:appcompat-v7:22.2.1'
+  compile 'com.google.android.gms:play-services:8.1.0'
+  compile 'com.android.support:support-v13:22.2.1'
+  compile 'com.android.support:support-v4:22.2.1'
+  compile 'com.android.support:design:22.2.1'
+}

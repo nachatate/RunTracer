@@ -1,0 +1,347 @@
+<resources>
+	<string name="app_name">RunTracer</string>
+	<string name="title_activity_main">RunTracer</string>
+	<string name="user_name">"User not signed in"</string>
+	<string name="user_name_static">"Name"</string>
+	<string name="user_name_static_hint">"Complete Name"</string>
+
+	<string name="email_sign_in_hint">"Click when ready to send your info."</string>
+
+	<string name="stats_static">"Statistics"</string>
+	<string name="bio_static">"Bio Info"</string>
+
+	<string name="current_static">"Current"</string>
+	<string name="current_fat_static">"Fat %"</string>
+	<string name="current_weight_static">"Weight"</string>
+	<string name="current_fat_value">"--"</string>
+	<string name="current_weight_value">"--"</string>
+
+	<string name="goal_static">"Goal"</string>
+	<string name="goal_fat_static">"Fat %"</string>
+	<string name="goal_fat_value">"--"</string>
+	<string name="goal_fat_hint">"What\'s your preferred % of fat"</string>
+
+	<string name="goal_weight_static">"Weight"</string>
+	<string name="goal_weight_value">"--"</string>
+	<string name="goal_weight_hint">"Your ideal weight"</string>
+
+	<string name="user_unit_system_value">"Unit system"</string>
+	<string name="user_unit_system_hint">"Your preferred unit system: imperial or metric"</string>
+	<string name="user_unit_system_metric">"Metric"</string>
+	<string name="user_unit_system_imperial">"Imperial"</string>
+
+	<string name="user_dob_value">""</string>
+	<string name="user_dob_static">"Date of Birth"</string>
+	<string name="user_dob_hint">"Your date of birth."</string>
+
+	<string name="pick_date">""</string>
+
+	<string name="user_height">""</string>
+	<string name="user_height_static">"Height"</string>
+	<string name="user_height_static_hint">"Height"</string>
+
+
+	<string name="max_heart_rate_static">"Max HR"</string>
+	<string name="max_heart_rate_value">"--"</string>
+
+	<string name="user_weight">""</string>
+	<string name="user_weight_static">"Weight"</string>
+	<string name="user_weight_static_hint">"Weight"</string>
+
+	<string name="user_weight_target">""</string>
+	<string name="user_weight_target_static">"Weight Goal"</string>
+	<string name="user_weight_target_hint">"Weight Goal"</string>
+
+	<string name="user_fat_percentage">""</string>
+	<string name="user_fat_percentage_static">"Fat %"</string>
+	<string name="user_fat_percentage_hint">"Fat %"</string>
+
+	<string name="user_fat_percentage_target">""</string>
+	<string name="user_fat_percentage_target_static">"Fat % Goal"</string>
+	<string name="user_fat_percentage_target_hint">"Fat % Goal"</string>
+
+	<string name="user_info">""</string>
+	<string name="total_runs">"Activities"</string>
+	<string name="total_distance">"Distance"</string>
+	<string name="total_calories">"Calories"</string>
+	<string name="recovery_heart_rate">"Recovery HR"</string>
+
+	<string name="total_runs_value">"--"</string>
+	<string name="total_distance_value">"--"</string>
+	<string name="total_calories_value">"--"</string>
+	<string name="recovery_heart_rate_value">"--"</string>
+
+	<string name="resting_heart_rate_static">"Resting HR"</string>
+	<string name="resting_heart_rate_value">"--"</string>
+
+	<string name="reserve_heart_rate_static">"Reserve HR"</string>
+	<string name="reserve_heart_rate_value">"--"</string>
+
+	<string name="vo2max_static">"VO2max"</string>
+	<string name="vo2max_value">"--"</string>
+
+	<string name="body_mass_index_static">"BMI"</string>
+	<string name="body_mass_index_value">"--"</string>
+
+	<string name="average_speed">"Average Speed:"</string>
+	<string name="average_calories">"Average Calories:"</string>
+	<string name="action_settings">Settings</string>
+
+	<string name="title_activity_run">Run</string>
+	<string name="title_activity_device_control_activity">Hear Rate Monitor</string>
+	<string name="title_activity_device_scan_activity">Searching for a Heart Rate Monitor</string>
+
+	<string name="time_static">"Time: "</string>
+	<string name="time_value">"00:00"</string>
+
+	<string name="run_inclination_static">"Inclination"</string>
+	<string name="run_inclination_value">"--"</string>
+
+	<string name="run_indoor_static">"Indoor / Outdoor run"</string>
+	<string name="run_indoor_value">"indoor"</string>
+	<string name="run_indoor_on">"indoor"</string>
+	<string name="run_indoor_off">"outdoor"</string>
+
+	<string name="calories_static">"Calories: "</string>
+	<string name="calories_value">"--"</string>
+
+	<string name="speed">"Motion Speed:"</string>
+	<string name="distance_static">"Motion Distance:"</string>
+	<string name="distance_value">"--"</string>
+
+	<string name="troubleshooting_static">"Troubleshooting: "</string>
+	<string name="troubleshooting_value">"--"</string>
+
+	<string name="distance">"Distance:"</string>
+	<string name="ble_not_supported">BLE is not supported</string>
+
+	<string name="label_data">Data:</string>
+	<string name="label_device_address">Device address:</string>
+	<string name="label_state">State:</string>
+	<string name="no_data">No data</string>
+	<string name="connected">Connected</string>
+	<string name="disconnected">Disconnected</string>
+	<string name="title_devices">BLE Device Scan</string>
+
+	<string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+	<string name="bluetooth_devices_searching">Searching for bluetooth devices</string>
+	<string name="bluetooth_device_discovered">Bluetooth device found</string>
+
+	<string name="unknown_device">Unknown device</string>
+	<string name="unknown_characteristic">Unknown characteristic</string>
+	<string name="unknown_service">Unknown service</string>
+
+	<!-- Menu items -->
+	<string name="menu_connect">Connect</string>
+	<string name="menu_disconnect">Disconnect</string>
+	<string name="menu_scan">Scan</string>
+	<string name="menu_stop">Stop</string>
+	<string name="distance_ui">---</string>
+
+	<string name="title_text">Google Sign-In\nQuickstart</string>
+
+	<!-- Sign-in status messages -->
+	<string name="signed_in_fmt">Signed in as: %s</string>
+	<string name="signing_in">Signing in…</string>
+	<string name="signing_out">Signing out…</string>
+	<string name="disconnecting">Disconnecting…</string>
+	<string name="signed_out">Signed out</string>
+
+	<!-- Google Play Services error for Toast -->
+	<string name="play_services_error_fmt">Google Play Services Error: %i</string>
+
+	<!-- Button labels -->
+	<string name="sign_out">Sign Out</string>
+	<string name="disconnect">Disconnect</string>
+
+	<!-- Content Description for images -->
+	<string name="desc_google_icon">Google Logo</string>
+	<string name="new_run">New Run</string>
+	<string name="new_user_button">New User</string>
+	<string name="user_resting_hr_button">Measure Rest. HR</string>
+	<string name="user_profile_button">Profile</string>
+	<string name="user_activity_button">Activity</string>
+
+	<string name="email_login">Email login</string>
+
+	<string name="heart_rate_static">Heart Rate</string>
+	<string name="heart_rate_value">--</string>
+
+	<string name="hip_circunference_static">"Hip Circ."</string>
+	<string name="hip_circunference_value">""</string>
+	<string name="hip_circunference_hint">Hip Circumference in Centimetres</string>
+
+	<string name="full_name_static">Name</string>
+	<string name="full_name"/>
+	<string name="full_name_hint">Your Full Name.</string>
+
+	<string name="user_gender_static">Gender</string>
+	<string name="user_gender_value"/>
+	<string name="user_gender_hint">male/female</string>
+
+	<string name="email_static">Email</string>
+	<string name="email"/>
+	<string name="email_hint">Your email address.</string>
+
+	<string name="user_password_static">Password</string>
+	<string name="user_password"/>
+	<string name="user_password_hint">Your Password.</string>
+
+	<string name="sign_up">Sign Up</string>
+	<string name="sign_in">Sign In</string>
+
+	<string name="date_picker_button"/>
+	<string name="space_static">   </string>
+
+	<string name="exit">Exit</string>
+	<string name="speed_unknown">--</string>
+	<string name="acceleration">Acceleration</string>
+	<string name="heart_beat_unknown">--</string>
+	<string name="scan_msg">Heart Rate Monitor</string>
+	<string name="new_run_button_text">Start a new run</string>
+	<string name="start_run_button">Start</string>
+	<string name="btn_change_data">Change</string>
+	<string name="pause_run_button">Pause</string>
+	<string name="stop_run_button">Stop</string>
+	<string name="history_button_text">Shows your past activity</string>
+	<string name="title_activity_new_user">New User</string>
+	<string name="title_activity_profile">Profile</string>
+	<string name="title_activity_activities">Activities</string>
+	<string name="title_activity_about">About you</string>
+
+    <string name="large_text">
+        "Activity History.\n\n"
+    </string>
+
+	<string name="measure_inclination_message">Place your mobile on the surface and press ok when ready;</string>
+	<string name="measure_inclination_ok">OK</string>
+	<string name="measure_inclination_cancel">Cancel</string>
+	<string name="measure_inclination_value">-- %</string>
+	<string name="measure_inclination_button">Use this</string>
+	<string name="calibrate_button">Reset</string>
+	<string name="speed_units">--</string>
+	<string name="distance_units">--</string>
+	<string name="calories_units">KCal</string>
+	<string name="weight_units">--</string>
+	<string name="height_units">--</string>
+	<string name="length_units">--</string>
+
+	<string name="heart_beat_units">Hz</string>
+	<string name="inclination_units">%</string>
+	<string name="unit_km">km</string>
+	<string name="unit_km_h">km/h</string>
+	<string name="unit_miles">miles</string>
+	<string name="unit_miles_h">miles/h</string>
+	<string name="btn_done_run">DONE</string>
+
+	<string name="user_bmi_static">Body Mass Index</string>
+	<string name="user_bmi_value"> </string>
+	<string name="user_bmi_value_hint">Calc. BMI</string>
+
+	<string name="user_bai_static">Body Adiposity Index</string>
+	<string name="user_bai_value"> </string>
+	<string name="user_bai_value_hint">Calc. BAI</string>
+	<string name="space"/>
+	<string name="gps_speed_static">GPS Speed</string>
+	<string name="gps_distance_static">GPS distance</string>
+	<string name="calories_heart_beat_static">Calories (heart rate)</string>
+	<string name="calories_distance_value">--</string>
+	<string name="calories_heart_beat_value">--</string>
+	<string name="calories_distance_static">Calories (distance)</string>
+	<string name="measure_inclination_static">Device Inclination</string>
+	<string name="device_inclination_static"/>
+	<string name="device_inclination_value">  </string>
+	<string name="user_about_button">About You</string>
+	<string name="about_you"/>
+	<string name="disclaimer"/>
+	<string name="unit_cm">cm</string>
+	<string name="unit_kg">kg</string>
+	<string name="unit_ft">ft</string>
+	<string name="unit_lb">lb</string>
+	<string name="unit_inches">in</string>
+	<string name="username_hint">hint</string>
+	<string name="title_activity_run_chart">RunChartActivity</string>
+	<string name="body_adiposity_index_static">BAI</string>
+	<string name="body_adiposity_index_value">--</string>
+	<string name="updates">
+
+DISCLAIMER:
+\n
+Please pay attention to the following information:
+\n
+You must not rely on the information on this App as an alternative to medical advice from your doctor or other professional healthcare provider.
+If you have any specific questions about any medical matter, you should consult your doctor or other professional healthcare provider.
+If you think you may be suffering from any medical condition, you should seek immediate medical attention.
+You should never delay seeking medical advice, disregard medical advice or discontinue medical treatment because of information on this App.
+Our app includes interactive features that allow users to communicate with us.
+You acknowledge that, because of the limited nature of communication through our App\'s interactive features,
+any assistance you may receive using any such features is likely to be incomplete and may even be misleading.
+
+		</string>
+	<string name="eula">
+
+END-USER LICENSE AGREEMENT FOR RUNTRACER©
+\n
+IMPORTANT:
+\n
+PLEASE READ THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT CAREFULLY BEFORE CONTINUING WITH THIS PROGRAM INSTALL:
+\n
+	RUNTRACER©\'s End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and RUNTRACER©.
+	For the RUNTRACER© software product(s) identified above which may include associated software components, media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT").
+	By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA.
+	This license agreement represents the entire agreement concerning the program between you and RUNTRACER©, (referred to as "licenser"), and it supersedes any prior proposal,
+	representation, or understanding between the parties.
+	If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.
+
+The SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. The SOFTWARE PRODUCT is licensed, not sold.
+\n
+
+1. GRANT OF LICENSE.
+The SOFTWARE PRODUCT is licensed as follows:
+(a) Installation and Use.
+RUNTRACER© grants you the right to install and use copies of the SOFTWARE PRODUCT on your computer running a validly licensed copy of the operating system for which the SOFTWARE PRODUCT was designed [e.g., Android, iOS].
+(b) Backup Copies.
+You may also make copies of the SOFTWARE PRODUCT as may be necessary for backup and archival purposes.
+
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS.
+(a) Maintenance of Copyright Notices.
+You must not remove or alter any copyright notices on any and all copies of the SOFTWARE PRODUCT.
+(b) Distribution.
+You may not distribute registered copies of the SOFTWARE PRODUCT to third parties. Evaluation versions available for download from RUNTRACER©\'s websites may be freely distributed.
+Prohibition on Reverse Engineering, Decompilation, and Disassembly.
+You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation.
+(d) Rental.
+You may not rent, lease, or lend the SOFTWARE PRODUCT.
+(e) Support Services.
+RUNTRACER© may provide you with support services related to the SOFTWARE PRODUCT ("Support Services").
+Any supplemental software code provided to you as part of the Support Services shall be considered part of the SOFTWARE PRODUCT and subject to the terms and conditions of this EULA.
+(f) Compliance with Applicable Laws.
+You must comply with all applicable laws regarding use of the SOFTWARE PRODUCT.
+
+3. TERMINATION
+Without prejudice to any other rights, RUNTRACER© may terminate this EULA if you fail to comply with the terms and conditions of this EULA.
+In such event, you must destroy all copies of the SOFTWARE PRODUCT in your possession.
+
+4. COPYRIGHT
+All title, including but not limited to copyrights, in and to the SOFTWARE PRODUCT and any copies thereof are owned by RUNTRACER© or its suppliers.
+All title and intellectual property rights in and to the content which may be accessed through use of the SOFTWARE PRODUCT is the property of the
+respective content owner and may be protected by applicable copyright or other intellectual property laws and treaties.
+This EULA grants you no rights to use such content.
+All rights not expressly granted are reserved by RUNTRACER©.
+
+5. NO WARRANTIES
+RUNTRACER© expressly disclaims any warranty for the SOFTWARE PRODUCT.
+The SOFTWARE PRODUCT is provided \'As Is\' without any express or implied warranty of any kind, including but not limited to any warranties of merchantability, noninfringement, or fitness of a particular purpose.
+RUNTRACER© does not warrant or assume responsibility for the accuracy or completeness of any information, text, graphics, links or other items contained within the SOFTWARE PRODUCT.
+RUNTRACER© makes no warranties respecting any harm that may be caused by the transmission of a computer virus, worm, time bomb, logic bomb, or other such computer program.
+RUNTRACER© further expressly disclaims any warranty or representation to Authorized Users or to any third party.
+
+6. LIMITATION OF LIABILITY
+In no event shall RUNTRACER© be liable for any damages (including, without limitation, lost profits, business interruption, or lost information) rising out of \'Authorized Users\' use of or inability to use the SOFTWARE PRODUCT, even if RUNTRACER© has been advised of the possibility of such damages.
+In no event will RUNTRACER© be liable for loss of data or for indirect, special, incidental, consequential (including lost profit), or other damages based in contract, tort or otherwise.
+RUNTRACER© shall have no liability with respect to the content of the SOFTWARE PRODUCT or any part thereof, including but not limited to errors or omissions contained therein, libel,
+infringements of rights of publicity, privacy, trademark rights, business interruption, personal injury, loss of privacy, moral rights or the disclosure of confidential information.
+
+	</string>
+	<string name="splash_screen">splash image</string>
+</resources>

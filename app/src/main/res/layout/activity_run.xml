@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.RunTracer.RunActivity">
+
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:id="@+id/table_layout_0"
+		style="@android:style/Theme.Light">
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginBottom="20sp">
+			<TextView android:text="@string/time_static"
+			          android:layout_width="wrap_content"
+			          android:layout_height="wrap_content"
+			          android:textAppearance="?android:attr/textAppearanceLarge"
+			          android:id="@+id/time_static"
+			          android:layout_column="0"
+			          android:layout_gravity="left|bottom"
+			          android:textSize="32sp"
+			          android:textStyle="bold"
+			          android:minWidth="60sp"/>
+			<Chronometer
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/time_value"
+				android:id="@+id/time_value"
+				android:layout_gravity="bottom"
+				android:textSize="36sp"
+				android:textStyle="bold" />
+		</TableRow>
+	</TableLayout>
+
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_below="@id/table_layout_0"
+		android:id="@+id/table_layout_1"
+		style="@android:style/Theme.Light">
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/motion_speed_row">
+			<TextView
+				android:text="@string/speed"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/speed"
+				android:layout_column="0"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/speed_unknown"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/speed_ui"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/speed_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/speed_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/motion_distance_row">
+			<TextView
+				android:text="@string/distance_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/distance_static"
+				android:layout_column="0"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/distance_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/distance_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/distance_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/distance_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10sp">
+			<View
+				android:id="@+id/line0"
+				android:layout_width="match_parent"
+				android:layout_height="1dip"
+				android:layout_weight="1"
+				android:background="#4c7990"
+				android:padding="2dip"
+				android:layout_span="8" />
+		</TableRow>
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/gps_speed_row">
+			<TextView
+				android:text="@string/gps_speed_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/gps_speed_static"
+				android:layout_column="0"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/speed_unknown"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/gps_speed_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/speed_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/gps_speed_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/gps_distance_row">
+			<TextView
+				android:text="@string/gps_distance_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/gps_distance_static"
+				android:layout_column="0"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/distance_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/gps_distance_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/distance_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/gps_distance_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10sp">
+			<View
+				android:id="@+id/line1"
+				android:layout_width="match_parent"
+				android:layout_height="1dip"
+				android:layout_weight="1"
+				android:background="#4c7990"
+				android:padding="2dip"
+				android:layout_span="8" />
+		</TableRow>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="top">
+			<TextView
+				android:text="@string/calories_distance_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calories_distance_static"
+				android:layout_column="0"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/calories_distance_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calories_distance_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/calories_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calories_distance_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="top">
+			<TextView
+				android:text="@string/calories_heart_beat_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calories_heart_beat_static"
+				android:layout_column="0"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/calories_heart_beat_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calories_heart_beat_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/calories_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calories_heart_beat_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+
+
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10sp">
+			<View
+				android:id="@+id/line2"
+				android:layout_width="match_parent"
+				android:layout_height="1dip"
+				android:layout_weight="1"
+				android:background="#4c7990"
+				android:padding="2dip"
+				android:layout_span="8" />
+		</TableRow>
+
+
+
+
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TextView
+				android:text="@string/heart_rate_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/textView"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+			<TextView
+				android:text="@string/heart_rate_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/heart_rate_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/heart_beat_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/heart_beat_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top"/>
+		</TableRow>
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10sp">
+			<View
+				android:id="@+id/line3"
+				android:layout_width="match_parent"
+				android:layout_height="1dip"
+				android:layout_weight="1"
+				android:background="#4c7990"
+				android:padding="2dip"
+				android:layout_span="8" />
+		</TableRow>
+
+
+
+
+
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="left|center">
+			<TextView
+				android:text="@string/run_inclination_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_column="0"
+				android:id="@+id/run_inclination_static"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:minWidth="110dp"/>
+			<TextView
+				android:text="@string/run_inclination_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/run_inclination_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+			<TextView
+				android:text="@string/inclination_units"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/inclination_units"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"/>
+		</TableRow>
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TextView
+				android:text="@string/measure_inclination_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/measure_inclination_static"
+				android:textSize="16sp"
+				android:layout_column="0"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:minWidth="160sp"
+				android:maxWidth="160sp"/>
+			<TextView
+				android:text="@string/measure_inclination_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/measure_inclination_value"
+				android:textSize="16sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:layout_marginLeft="6dp"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"/>
+
+
+			<Button
+				android:text="@string/measure_inclination_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/measure_inclination_button"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:enabled="true"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:clickable="false"
+				android:maxWidth="90dp"
+				android:minWidth="90dp"
+				android:layout_gravity="top|left"/>
+
+
+		</TableRow>
+	</TableLayout>
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/table_layout_2"
+		android:layout_below="@id/table_layout_1"
+		android:layout_marginLeft="10dp">
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<TextView
+				android:text="@string/device_inclination_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/device_inclination_static"
+				android:textSize="18sp"
+				android:layout_column="0"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:minWidth="160sp"
+				android:maxWidth="160sp"/>
+
+
+			<TextView
+				android:text="@string/device_inclination_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/device_inclination_value"
+				android:textSize="18sp"
+				android:layout_column="1"
+				android:textStyle="bold"
+				android:layout_gravity="top|left|center"
+				android:minWidth="80sp"
+				android:maxWidth="80sp"
+				android:layout_marginLeft="6dp"/>
+
+
+			<Button
+				android:text="@string/calibrate_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/calibrate_button"
+				android:textSize="16sp"
+				android:layout_column="2"
+				android:textStyle="bold"
+				android:enabled="true"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:clickable="false"
+				android:maxWidth="90dp"
+				android:minWidth="90dp"
+				android:layout_gravity="top|left"/>
+
+
+		</TableRow>
+		<TableRow
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+		</TableRow>
+	</TableLayout>
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/table_layout_3"
+		android:layout_below="@id/table_layout_2"
+		android:layout_marginLeft="10sp" >
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<Switch
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/run_indoor_value"
+				android:id="@+id/run_indoor_value"
+				android:layout_column="0"
+				android:textStyle="bold"
+				android:textSize="16sp"
+				android:clickable="true"
+				android:checked="true"
+				android:layout_marginLeft="2dp"/>
+		</TableRow>
+	</TableLayout>
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/table_layout_4"
+		android:layout_below="@id/table_layout_3"
+		android:layout_marginLeft="10sp"
+		android:layout_marginTop="10sp">
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TextView
+				android:text="@string/acceleration"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textSize="12sp"
+				android:id="@+id/acceleration"
+				android:layout_column="0"
+				android:layout_marginBottom="6dp"
+				android:textStyle="bold"/>
+		</TableRow>
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<ProgressBar
+				style="?android:attr/progressBarStyleHorizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/accelerationBar"
+				android:layout_column="0"/>
+		</TableRow>
+<!--		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TextView
+				android:text="@string/troubleshooting_static"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textSize="12sp"
+				android:id="@+id/troubleshooting_static"
+				android:layout_column="0"
+				android:layout_marginBottom="6dp" />
+		</TableRow>
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<TextView
+				android:text="@string/troubleshooting_value"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textSize="12sp"
+				android:id="@+id/troubleshooting_value"
+				android:layout_column="0"
+				android:layout_marginBottom="6dp" />
+		</TableRow>-->
+	</TableLayout>
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/table_layout_5"
+		android:layout_below="@id/table_layout_4"
+		android:layout_marginLeft="10sp"
+		android:layout_marginTop="10sp">
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/start_run_button"
+				android:id="@+id/btn_start_run"
+				android:onClick="startChronometer"
+				android:ellipsize="middle"
+				android:textSize="18sp"
+				android:typeface="sans"
+				android:visibility="visible"
+				android:enabled="true"
+				android:focusable="false"
+				android:clickable="false"
+				android:focusableInTouchMode="false"
+				android:maxWidth="80dp"
+				android:minWidth="80dp" />
+			<Button
+				style="?android:attr/buttonStyleSmall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/btn_done_run"
+				android:id="@+id/btn_done_run"
+				android:ellipsize="middle"
+				android:textSize="18sp"
+				android:typeface="sans"
+				android:visibility="visible"
+				android:clickable="false"
+				android:enabled="true"
+				android:focusable="false"
+				android:focusableInTouchMode="false"
+				android:minWidth="80dp"
+				android:maxWidth="80dp"/>
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>
